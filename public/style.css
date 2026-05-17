@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fff5f8; /* Creamy pink background */
+  margin: 0;
+  padding: 0;
+  color: #5a5a5a;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 30px; /* More rounded */
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+  border: 4px solid #ffe4e1;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff85a1; /* Cute pink title */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  padding: 15px;
+  border: 2px solid #fff0f5;
+  border-radius: 20px;
+  background-color: #fffbff;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin: 8px 0;
+  padding: 10px 16px;
+  border-radius: 25px;
+  max-width: 80%;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.message.user {
+  background-color: #ffd1dc; /* Soft Pastel Pink */
+  color: #7d4a56;
+  float: right;
+  text-align: right;
+  border-bottom-right-radius: 5px;
+}
+
+.message.bot {
+  background-color: #c1e1ff; /* Baby Blue */
+  color: #4a5d7d;
+  float: left;
+  text-align: left;
+  border-bottom-left-radius: 5px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 2px solid #ffd1dc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff85a1;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff85a1; /* Adorable Pink Button */
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ff6b8d;
+  transform: scale(1.05);
+}
